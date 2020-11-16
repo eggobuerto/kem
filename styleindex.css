@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 header {
   background-color: #bcad6a;
   padding: 20px;
@@ -8,7 +13,66 @@ h1 {
   color: #f2f0e2;
   text-align: center;
 }
-body img {
-  width: 40%;
+body {
+  background-color: white;
+}
+#slideshow {
+  margin: 50px auto;
+  position: relative;
+  width: 240px;
+  height: 240px;
+  padding: 10px;
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#firstI {
+  width: 500px;
   height: auto;
+}
+#secondI {
+  width: 500px;
+  height: auto;
+}
+#thirdI {
+  width: 500px;
+  height: auto;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  z-index: 666;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle:checked + .menu {
+  display: block;
+}
+
+label {
+  font-size: 30px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

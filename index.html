@@ -5,11 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styleindex.css" />
     <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="slideshow.js"></script>
   </head>
   <body>
     <header>
+      <label>
+        ☰
+        <input type="checkbox" class="menu-toggle" />
+        <div class="menu">test</div>
+      </label>
       <h1>KEM Playing Cards</h1>
     </header>
-    <img src="arrow_nar_std_l.jpg" alt="Bild på bakrunder av spelkort" />
+    <div id="slideshow">
+      <div>
+        <img src="arrow_nar_std_l.jpg" alt="" id="firstI" />
+      </div>
+      <div>
+        <img src="kem-poker-kaarten.jpg" alt="" id="secondI" />
+      </div>
+      <div>
+        <img
+          src="kem-playing-cards-jacquard-burgundy-and-green.jpg"
+          alt=""
+          id="thirdI"
+        />
+      </div>
+    </div>
   </body>
 </html>
